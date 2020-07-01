@@ -75,7 +75,7 @@ if __name__ == '__main__':
                  impute=False,
                  scale='standard')
 
-    model = lstm.LSTM_expsmooth(args.n_feat, args.size_hidden, args.size_out, n_pred=args.n_pred)
+    model = lstm.LSTM_timeseries(args.n_feat, args.size_hidden, args.size_out, n_pred=args.n_pred)
 
 
     optimizer = tf.keras.optimizers.SGD(learning_rate=0.005)
