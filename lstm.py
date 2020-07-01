@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-class LSTM_expsmooth(tf.Module):
+class LSTM_timeseries(tf.Module):
     def __init__(self, nodes_in, units_hidden, nodes_out, n_pred=1):
         self.units_hidden = units_hidden
         self.nodes_in = nodes_in
